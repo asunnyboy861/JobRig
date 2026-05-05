@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobRig - Fastest Quote-to-Invoice App for Contractors</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #f5f5f7; }
+        .container { max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; color: #007AFF; }
+        h2 { font-size: 22px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; }
+        p { margin-bottom: 16px; color: #333; }
+        a { color: #007AFF; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .hero { text-align: center; padding: 48px 20px; background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%); color: white; border-radius: 16px; margin-bottom: 32px; }
+        .hero h1 { color: white; font-size: 40px; margin-bottom: 16px; }
+        .hero p { color: rgba(255,255,255,0.9); font-size: 18px; }
+        .hero .tagline { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+        .card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+        .feature-item { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        .feature-item h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: #007AFF; }
+        .feature-item p { font-size: 14px; color: #555; margin-bottom: 0; }
+        .pricing { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 16px; }
+        .price-card { background: white; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        .price-card.popular { border: 2px solid #007AFF; }
+        .price-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+        .price-card .price { font-size: 28px; font-weight: 700; color: #007AFF; margin: 8px 0; }
+        .price-card .period { font-size: 13px; color: #888; }
+        .cta { display: inline-block; background: #007AFF; color: white; padding: 14px 32px; border-radius: 12px; font-size: 18px; font-weight: 600; text-decoration: none; margin-top: 24px; }
+        .cta:hover { background: #0066CC; text-decoration: none; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        footer { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e0e0e0; color: #888; font-size: 14px; }
+        @media (max-width: 600px) { .feature-grid, .pricing { grid-template-columns: 1fr; } .hero h1 { font-size: 28px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>JobRig</h1>
+            <p class="tagline">Quotes in 30 Seconds. Invoices in One Tap.</p>
+            <p>The fastest quote-to-invoice app built for contractors, freelancers, and service professionals.</p>
+        </div>
+
+        <div class="card">
+            <h2>Why JobRig?</h2>
+            <p>Stop losing jobs because you can't get a quote out fast enough. JobRig lets you create professional quotes from the job site, convert them to invoices with one tap, and get paid faster.</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>30-Second Quotes</h3>
+                <p>Create and share professional PDF quotes before you leave the job site.</p>
+            </div>
+            <div class="feature-item">
+                <h3>One-Tap Invoices</h3>
+                <p>Convert any quote to an invoice instantly. No re-typing, no mistakes.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Works Offline</h3>
+                <p>Full functionality without internet. Syncs when you're back online.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Smart Reminders</h3>
+                <p>Never lose track of a payment. Get notified for overdue invoices.</p>
+            </div>
+            <div class="feature-item">
+                <h3>AI Suggestions</h3>
+                <p>Not sure how to price? Get smart AI-powered pricing suggestions.</p>
+            </div>
+            <div class="feature-item">
+                <h3>iCloud Sync</h3>
+                <p>Start on your iPhone, finish on your iPad. Seamless sync.</p>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 24px;">
+            <h2>Pricing</h2>
+            <div class="pricing">
+                <div class="price-card">
+                    <h3>Free</h3>
+                    <div class="price">$0</div>
+                    <div class="period">forever</div>
+                    <ul style="text-align: left; font-size: 13px; margin-top: 12px;">
+                        <li>3 clients</li>
+                        <li>5 jobs/month</li>
+                        <li>PDF sharing</li>
+                    </ul>
+                </div>
+                <div class="price-card popular">
+                    <h3>Monthly</h3>
+                    <div class="price">$9.99</div>
+                    <div class="period">/month</div>
+                    <ul style="text-align: left; font-size: 13px; margin-top: 12px;">
+                        <li>Unlimited clients</li>
+                        <li>Unlimited jobs</li>
+                        <li>iCloud sync</li>
+                        <li>AI suggestions</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Lifetime</h3>
+                    <div class="price">$149.99</div>
+                    <div class="period">one-time</div>
+                    <ul style="text-align: left; font-size: 13px; margin-top: 12px;">
+                        <li>Everything in Pro</li>
+                        <li>Pay once</li>
+                        <li>Use forever</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 32px;">
+            <a href="https://apps.apple.com/app/id0000000000" class="cta">Download on the App Store</a>
+        </div>
+
+        <footer>
+            <p>JobRig by zzoutuo &copy; 2026</p>
+            <p><a href="support.html">Support</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+        </footer>
+    </div>
+</body>
+</html>

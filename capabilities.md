@@ -35,5 +35,5 @@ Based on operation guide analysis, the following capabilities are required:
 - Audio: Not applicable
 
 ## Verification
-- Build succeeded after configuration: ⏳ Pending (will verify after code generation)
-- All entitlements correct: ⏳ Pending
+- Build succeeded after configuration: ✅ Verified (iPhone XS Max + iPad Pro 13-inch M4)
+- All entitlements correct: ✅ Verified (In-App Purchase + Push Notifications)
