@@ -1,13 +1,7 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @State private var selectedTab: Int = {
-        if let envTab = ProcessInfo.processInfo.environment["JOBRIG_INITIAL_TAB"],
-           let tab = Int(envTab), (0...3).contains(tab) {
-            return tab
-        }
-        return 0
-    }()
+    @State private var selectedTab = 0
 
     var body: some View {
         TabView(selection: $selectedTab) {
