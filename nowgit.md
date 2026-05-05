@@ -42,9 +42,13 @@ JobRig/
 │   │   └── ContentView.swift
 │   └── ...
 ├── docs/                             # Policy Pages (GitHub Pages)
+│   ├── index.html                    # Landing Page
 │   ├── support.html                  # Support Page
 │   ├── privacy.html                  # Privacy Policy
 │   └── terms.html                    # Terms of Use
+├── .github/
+│   └── workflows/
+│       └── deploy.yml                # GitHub Pages auto-deployment
 ├── us.md                             # English Development Guide
 ├── keytext.md                        # App Store Metadata
 ├── capabilities.md                   # Capabilities Configuration
