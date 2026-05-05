@@ -1,79 +1,57 @@
-# JobRig - Contractor Job Tracker
+# Git Repositories
 
-## Overview
-JobRig is an iOS app for contractors, freelancers, and small service businesses to create quotes, convert them to invoices, and get paid faster — all from the job site, even offline.
+## Main App (iOS Application + Policy Pages)
 
-## Tech Stack
-- **Language**: Swift
-- **UI Framework**: SwiftUI
-- **Data Layer**: SwiftData (offline-first)
-- **Cloud Sync**: CloudKit
-- **Payments**: StoreKit 2 (IAP)
-- **PDF Generation**: PDFKit / UIGraphicsPDFRenderer
-- **AI**: GPT-4o-mini (quote suggestions)
+| Item | Value |
+|------|-------|
+| **Repository Name** | JobRig |
+| **Git URL** | git@github.com:asunnyboy861/JobRig.git |
+| **Repo URL** | https://github.com/asunnyboy861/JobRig |
+| **Visibility** | Public |
+| **Primary Language** | Swift |
+| **GitHub Pages** | ✅ **ENABLED** (from `/docs` folder) |
 
-## Architecture
-- MVVM pattern with SwiftData models
-- Observable services (SubscriptionManager)
-- PDF generation service
-- Offline-first with CloudKit sync
+## Policy Pages (Deployed from Main Repository /docs)
 
-## Project Structure
+| Page | URL | Status |
+|------|-----|--------|
+| Landing Page | https://asunnyboy861.github.io/JobRig/ | ✅ Active |
+| Support | https://asunnyboy861.github.io/JobRig/support.html | ✅ Active |
+| Privacy Policy | https://asunnyboy861.github.io/JobRig/privacy.html | ✅ Active |
+| Terms of Use | https://asunnyboy861.github.io/JobRig/terms.html | ✅ Active |
+
+**Note**: Terms of Use required for IAP subscription apps.
+
+## Repository Structure
+
+### Main App Repository
 ```
 JobRig/
-├── Models/
-│   ├── Client.swift
-│   ├── Job.swift
-│   ├── LineItem.swift
-│   ├── JobPhoto.swift
-│   ├── Reminder.swift
-│   └── JobLocation.swift
-├── Views/
-│   ├── MainTabView.swift
-│   ├── Onboarding/
-│   │   └── OnboardingView.swift
-│   ├── Jobs/
-│   │   ├── JobsListView.swift
-│   │   ├── JobCardView.swift
-│   │   └── JobDetailView.swift
-│   ├── Clients/
-│   │   ├── ClientsListView.swift
-│   │   └── ClientDetailView.swift
-│   ├── QuickCreate/
-│   │   └── QuickQuoteView.swift
-│   └── More/
-│       ├── MoreView.swift
-│       ├── DashboardView.swift
-│       ├── RemindersView.swift
-│       ├── PhotosView.swift
-│       ├── BusinessSettingsView.swift
-│       ├── PaywallView.swift
-│       ├── SettingsView.swift
-│       └── ContactSupportView.swift
-├── Services/
-│   ├── PDFInvoiceGenerator.swift
-│   └── SubscriptionManager.swift
-├── JobRigApp.swift
-└── ContentView.swift
+├── JobRig/                           # iOS App Source Code
+│   ├── JobRig.xcodeproj/             # Xcode Project
+│   ├── JobRig/                       # Swift Source Files
+│   │   ├── Views/
+│   │   │   ├── Jobs/
+│   │   │   ├── Clients/
+│   │   │   ├── QuickCreate/
+│   │   │   ├── More/
+│   │   │   └── Onboarding/
+│   │   ├── Models/
+│   │   ├── Services/
+│   │   ├── JobRigApp.swift
+│   │   └── ContentView.swift
+│   └── ...
+├── docs/                             # Policy Pages (GitHub Pages)
+│   ├── support.html                  # Support Page
+│   ├── privacy.html                  # Privacy Policy
+│   └── terms.html                    # Terms of Use
+├── us.md                             # English Development Guide
+├── keytext.md                        # App Store Metadata
+├── capabilities.md                   # Capabilities Configuration
+├── icon.md                           # App Icon Details
+├── price.md                          # Pricing Configuration
+└── nowgit.md                         # This File
 ```
-
-## Monetization
-- **Free**: 3 clients, 5 jobs/month, local storage
-- **Monthly**: $9.99/month - Unlimited everything + cloud sync + AI
-- **Yearly**: $69.99/year - Save 41%
-- **Lifetime**: $149.99 one-time - Pay once, use forever
-
-## Product IDs
-| Product | ID |
-|---------|-----|
-| Monthly | com.zzoutuo.JobRig.monthly |
-| Yearly | com.zzoutuo.JobRig.yearly |
-| Lifetime | com.zzoutuo.JobRig.lifetime |
-
-## Policy Pages
-- Support: https://asunnyboy861.github.io/JobRig/support.html
-- Privacy: https://asunnyboy861.github.io/JobRig/privacy.html
-- Terms: https://asunnyboy861.github.io/JobRig/terms.html
 
 ## Bundle ID
 `com.zzoutuo.JobRig`
@@ -81,19 +59,5 @@ JobRig/
 ## Deployment Target
 iOS 17.0
 
-## Build & Run
-1. Open `JobRig.xcodeproj` in Xcode
-2. Select "JobRig" scheme
-3. Choose iOS Simulator or device
-4. Build & Run (Cmd+R)
-
-## Key Features
-- 30-second quote creation
-- One-tap quote-to-invoice conversion
-- Professional PDF generation with branding
-- Offline-first architecture
-- CloudKit sync (Pro)
-- AI-powered quote suggestions (Pro)
-- Payment reminders and follow-ups
-- Photo documentation
-- Dashboard with revenue tracking
+## Monetization Model
+Subscription (IAP) - Monthly $9.99, Yearly $69.99, Lifetime $149.99
